@@ -1,24 +1,24 @@
-# 🏡 Predicting House Prices (ISYE 6740)
+# Predicting House Prices
 
-**Authors:** Yash Gupta, Sumana Chilakamarri, & Ayesha Uddin  
-**Course:** Computational Data Analysis — Spring 2025  
+**Authors:** Sumana Chilakamarri, Yash Gupta, & Ayesha Uddin  
+**Course:** Computational Data Analysis/Machine Learning
 **Date:** April 23, 2025
 
 ---
 
-## 📌 Problem Statement
-Traditional home valuation methods (comps, rules of thumb, human judgment) often miss **non‑linear interactions** among features like school quality, walkability, renovations, and neighborhood effects. We apply **machine learning** to estimate residential property prices more **accurately and objectively**, using structured features plus engineered components, and evaluate both **unsupervised** and **supervised** approaches.
+## Problem Statement
+Traditional home valuation methods often miss **non‑linear interactions** among features like school quality, walkability, renovations, and neighborhood effects. We apply **machine learning** to estimate residential property prices more **accurately and objectively**, using structured features & engineered components, and evaluate both **unsupervised** and **supervised** approaches.
 
 ---
 
-## 📂 Data Source
+## Data Source
 Primary dataset: **Kaggle – Housing Prices** (tabular home attributes). We initially explored joining with an additional Kaggle dataset containing richer neighborhood attributes; due to heavy missingness after join, we proceeded with the second dataset alone.
 
 Example features include: square footage, bedroom/bath counts, lot size, basement, AC, guest room, plus zoning/road access and within‑city location markers when available.
 
 ---
 
-## 🧹 Data Preprocessing
+## Data Preprocessing
 - Removed extreme sale price outliers using a **One‑Class SVM** (RBF γ=0.05 on `SalePrice`).
 - Missing values: numerical → **median imputation**; categorical → **most frequent**.
 - Standardized numeric features; **one‑hot encoded** categoricals.
@@ -29,9 +29,9 @@ Example features include: square footage, bedroom/bath counts, lot size, basemen
 
 ---
 
-## 🧠 Methods
+## Methods
 
-### Unsupervised: K‑Means
+### Unsupervised: K‑Means Clustering
 - Used the elbow method → **k = 3** clusters.
 - Visualized clusters in 2D using the first two principal components.
 
@@ -46,7 +46,7 @@ Example features include: square footage, bedroom/bath counts, lot size, basemen
 
 ---
 
-## 📊 Findings (from the report)
+## Findings (from the report)
 - **Cluster 0** (budget) ~ **$130.5k** average, **707** homes.
 - **Cluster 1** (mid‑market) ~ **$217.1k** average, **314** homes.
 - **Cluster 2** (premium) ~ **$228.0k** average, **302** homes.
@@ -54,7 +54,7 @@ Example features include: square footage, bedroom/bath counts, lot size, basemen
 
 ---
 
-## 🗺️ Repository Map
+## Repository
 ```
 predicting-house-prices/
 ├─ notebooks/
@@ -68,12 +68,9 @@ predicting-house-prices/
 ├─ requirements.txt
 └─ README.md
 ```
-
-> If your files are currently in the root folder, simply create the `notebooks/`, `scripts/`, and `data/` directories and move them to match the above.
-
 ---
 
-## ▶️ How to Run
+## Running the files
 
 ### Setup
 ```bash
@@ -108,8 +105,3 @@ Full details, figures, and discussion: **[Predicting_House_Prices.pdf](./Predict
 - **Python**, **pandas**, **numpy**, **scikit‑learn**, **imbalanced‑learn**, **xgboost** (optional), **matplotlib**, **seaborn**, **Jupyter**
 
 ---
-
-## 👩‍💻 Authors
-- **Yash Gupta**  
-- **Sumana Chilakamarri**  
-- **Ayesha Uddin**
