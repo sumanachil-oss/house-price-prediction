@@ -96,12 +96,12 @@ Suggested script behavior (already supported by many templates):
 
 ---
 
-## 📑 Report
-Full details, figures, and discussion: **[Predicting_House_Prices.pdf](./Predicting_House_Prices.pdf)**
+## Report
+Full details, figures, etc.: **[Predicting_House_Prices.pdf](./Predicting_House_Prices.pdf)**
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 - **Python**, **pandas**, **numpy**, **scikit‑learn**, **imbalanced‑learn**, **xgboost** (optional), **matplotlib**, **seaborn**, **Jupyter**
 
 ---
